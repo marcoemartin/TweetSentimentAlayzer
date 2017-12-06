@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+DESTINATION=./results/increment.infogain.txt
+for ARFF in *.arff;do
+  echo $ARFF >> $DESTINATION
+  sh /u/cs401/WEKA/infogain.sh $ARFF >> $DESTINATION
+done
+cat $DESTINATION
+

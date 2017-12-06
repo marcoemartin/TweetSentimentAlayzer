@@ -1,0 +1,185 @@
+
+Naive Bayes Classifier
+
+                        Class
+Attribute                   0      4
+                        (0.5)  (0.5)
+=====================================
+1st_person
+  mean                  0.5545  0.415
+  std. dev.             0.8213 0.7007
+  weight sum              9992   9989
+  precision                  1      1
+
+2nd_person
+  mean                   0.155 0.2571
+  std. dev.              0.447 0.5624
+  weight sum              9992   9989
+  precision                  1      1
+
+3rd_person
+  mean                  0.2507 0.2471
+  std. dev.             0.5506 0.5519
+  weight sum              9992   9989
+  precision                  1      1
+
+coord_conjunction
+  mean                  0.2812 0.2501
+  std. dev.             0.5494 0.5081
+  weight sum              9992   9989
+  precision                  1      1
+
+past_tense_verb
+  mean                  0.3661 0.2646
+  std. dev.             0.6876 0.5858
+  weight sum              9992   9989
+  precision                  1      1
+
+future_tense_verb
+  mean                  0.1307 0.1358
+  std. dev.             0.5229 0.5126
+  weight sum              9992   9989
+  precision             1.2857 1.2857
+
+commas
+  mean                  0.5997 0.6718
+  std. dev.             1.2904 1.3745
+  weight sum              9992   9989
+  precision             1.3333 1.3333
+
+colons
+  mean                  0.0026 0.0026
+  std. dev.             0.1667 0.1667
+  weight sum              9992   9989
+  precision                  1      1
+
+dashes
+  mean                  0.1088 0.1584
+  std. dev.             0.4657 0.5748
+  weight sum              9992   9989
+  precision              1.875  1.875
+
+parentheses
+  mean                   0.039 0.0479
+  std. dev.             0.3062 0.3197
+  weight sum              9992   9989
+  precision                1.2    1.2
+
+ellipses
+  mean                  0.2976  0.211
+  std. dev.             0.6566 0.5613
+  weight sum              9992   9989
+  precision             1.1667 1.1667
+
+common_nouns
+  mean                  3.4578 3.5201
+  std. dev.             2.4013 2.3014
+  weight sum              9992   9989
+  precision             1.0952 1.0952
+
+proper_nouns
+  mean                  0.2399  0.319
+  std. dev.             0.6201 0.7302
+  weight sum              9992   9989
+  precision                  1      1
+
+adverbs
+  mean                  0.9593 0.7075
+  std. dev.              1.095 0.9717
+  weight sum              9992   9989
+  precision                  1      1
+
+wh_words
+  mean                  0.1534 0.1285
+  std. dev.             0.4325 0.4053
+  weight sum              9992   9989
+  precision                1.2    1.2
+
+modern_slang
+  mean                  0.1291 0.1299
+  std. dev.             0.4163 0.4095
+  weight sum              9992   9989
+  precision                  1      1
+
+upper_case_words
+  mean                  0.2456 0.2614
+  std. dev.             0.9889 0.9071
+  weight sum              9992   9989
+  precision             1.2381 1.2381
+
+avg_length_sentences
+  mean                   9.862 9.4002
+  std. dev.             5.8103 5.6166
+  weight sum              9992   9989
+  precision             0.3051 0.3051
+
+avg_length_token
+  mean                  4.1926  4.529
+  std. dev.             1.0967 1.2723
+  weight sum              9992   9989
+  precision             0.0384 0.0384
+
+num_sentences
+  mean                  1.4894 1.4464
+  std. dev.             0.8442 0.8119
+  weight sum              9992   9989
+  precision                  1      1
+
+
+
+Time taken to build model: 0.21 seconds
+Time taken to test model on training data: 0.73 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances       11785               58.981  %
+Incorrectly Classified Instances      8196               41.019  %
+Kappa statistic                          0.1796
+Mean absolute error                      0.4512
+Root mean squared error                  0.5071
+Relative absolute error                 90.2452 %
+Root relative squared error            101.4284 %
+Total Number of Instances            19981     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.513     0.333      0.606     0.513     0.556      0.625    0
+                 0.667     0.487      0.578     0.667     0.619      0.625    4
+Weighted Avg.    0.59      0.41       0.592     0.59      0.587      0.625
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 5125 4867 |    a = 0
+ 3329 6660 |    b = 4
+
+
+=== Error on test data ===
+
+Correctly Classified Instances        1147               57.35   %
+Incorrectly Classified Instances       853               42.65   %
+Kappa statistic                          0.147 
+Mean absolute error                      0.4574
+Root mean squared error                  0.5122
+Relative absolute error                 91.4848 %
+Root relative squared error            102.4362 %
+Total Number of Instances             2000     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.488     0.341      0.589     0.488     0.534      0.608    0
+                 0.659     0.512      0.563     0.659     0.607      0.608    4
+Weighted Avg.    0.574     0.427      0.576     0.574     0.57       0.608
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 488 512 |   a = 0
+ 341 659 |   b = 4
+

@@ -1,0 +1,35 @@
+3.1 Classifiers
+********** WEKA SMO **********
+Correctly Classified Instances         185               51.532  %  
+
+********** WEKA NaiveBayes **********
+Correctly Classified Instances         185               51.532  %
+
+
+********** Trees J48 *************
+Time taken to build model: 3.19 seconds
+Time taken to test model on training data: 0.16 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances       15224               76.12   %
+Incorrectly Classified Instances      4776               23.88   %
+Kappa statistic                          0.5224
+Mean absolute error                      0.3249
+Root mean squared error                  0.403 
+Relative absolute error                 64.9747 %
+Root relative squared error             80.6069 %
+Total Number of Instances            20000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         198               55.1532 %
+Incorrectly Classified Instances       161               44.8468 %
+Kappa statistic                          0.0992
+Mean absolute error                      0.4737
+Root mean squared error                  0.5675
+Relative absolute error                 94.7359 %
+Root relative squared error            113.507  %
+Total Number of Instances              359     
+

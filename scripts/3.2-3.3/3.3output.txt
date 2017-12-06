@@ -1,0 +1,75 @@
+3.3 Feature analysis
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.01857   19 avg_length_token
+ 0.01499    2 2nd_person
+ 0.01133    1 1st_person
+ 0.00985   11 ellipses
+ 0.0076     9 dashes
+ 0          7 commas
+ 0          8 colons
+ 0          4 coord_conjunction
+ 0          3 3rd_person
+ 0          6 future_tense_verb
+ 0          5 past_tense_verb
+ 0         17 upper_case_words
+ 0         16 modern_slang
+ 0         20 num_sentences
+ 0         18 avg_length_sentences
+ 0         12 common_nouns
+ 0         10 parentheses
+ 0         15 wh_words
+ 0         13 proper_nouns
+ 0         14 adverbs
+
+Selected attributes: 19,2,1,11,9,7,8,4,3,6,5,17,16,20,18,12,10,15,13,14 : 20
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.018137   19 avg_length_token
+ 0.011704   14 adverbs
+ 0.007514    2 2nd_person
+ 0.005614    1 1st_person
+ 0.004537    5 past_tense_verb
+ 0.003769   11 ellipses
+ 0.002841   12 common_nouns
+ 0.002475   13 proper_nouns
+ 0.001789    9 dashes
+ 0.001417   18 avg_length_sentences
+ 0.000756   15 wh_words
+ 0.000617    7 commas
+ 0.000557   20 num_sentences
+ 0.000502    4 coord_conjunction
+ 0.000474   10 parentheses
+ 0          17 upper_case_words
+ 0          16 modern_slang
+ 0           6 future_tense_verb
+ 0           3 3rd_person
+ 0           8 colons
+
+Selected attributes: 19,14,2,1,5,11,12,13,9,18,15,7,20,4,10,17,16,6,3,8 : 20
+
+Explanation: average token length, second person pronouns, and first person pronouns are the only
+ones that retained their importance when running the 10k arff file. Average token length might be 
+because when people are happy they generally write shorter words or opt to use acronyms.This might
+be because when people are happy they will usually talk about themselves which implies why first 
+person pronouns can be used to determine the sentiment. Same idea for second person, when people 
+are angry they are generally angry at another person and so refer to them in the second person.

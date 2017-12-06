@@ -1,0 +1,94 @@
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: 0, 4
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -1.2242 * (normalized) 1st_person
+ +       3.3895 * (normalized) 2nd_person
+ +       1.082  * (normalized) 3rd_person
+ +      -0.1001 * (normalized) coord_conjunction
+ +      -1.3068 * (normalized) past_tense_verb
+ +       0.8147 * (normalized) future_tense_verb
+ +       1.8468 * (normalized) commas
+ +      -0.7619 * (normalized) colons
+ +       4.4384 * (normalized) dashes
+ +       0.4355 * (normalized) parentheses
+ +      -1.7578 * (normalized) ellipses
+ +       1.3224 * (normalized) common_nouns
+ +       2.4414 * (normalized) proper_nouns
+ +      -2.412  * (normalized) adverbs
+ +      -1.1732 * (normalized) wh_words
+ +       0.4594 * (normalized) modern_slang
+ +       1.2537 * (normalized) upper_case_words
+ +      -0.812  * (normalized) avg_length_sentences
+ +       9.2803 * (normalized) avg_length_token
+ +      -0.4267 * (normalized) num_sentences
+ -       1.2525
+
+Number of kernel evaluations: 7839015 (56.887% cached)
+
+
+
+Time taken to build model: 4.95 seconds
+Time taken to test model on training data: 0.22 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances       12156               60.8378 %
+Incorrectly Classified Instances      7825               39.1622 %
+Kappa statistic                          0.2168
+Mean absolute error                      0.3916
+Root mean squared error                  0.6258
+Relative absolute error                 78.3244 %
+Root relative squared error            125.1594 %
+Total Number of Instances            19981     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.627     0.41       0.605     0.627     0.616      0.608    0
+                 0.59      0.373      0.612     0.59      0.601      0.608    4
+Weighted Avg.    0.608     0.392      0.609     0.608     0.608      0.608
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 6265 3727 |    a = 0
+ 4098 5891 |    b = 4
+
+
+=== Error on test data ===
+
+Correctly Classified Instances        1213               60.65   %
+Incorrectly Classified Instances       787               39.35   %
+Kappa statistic                          0.213 
+Mean absolute error                      0.3935
+Root mean squared error                  0.6273
+Relative absolute error                 78.7    %
+Root relative squared error            125.4592 %
+Total Number of Instances             2000     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.622     0.409      0.603     0.622     0.613      0.607    0
+                 0.591     0.378      0.61      0.591     0.6        0.607    4
+Weighted Avg.    0.607     0.394      0.607     0.607     0.606      0.607
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 622 378 |   a = 0
+ 409 591 |   b = 4
+

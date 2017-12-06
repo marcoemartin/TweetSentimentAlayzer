@@ -1,0 +1,592 @@
+3.2 Amount of training data
+TABLE OF ACCURARCIES
+----------------------------------------------------------
+|AMOUNT OF DATA | TRAINING ACCURARCY | TESTING ACCURARCY |
+----------------------------------------------------------
+| 500           | 80.7    %  *       | 47.6323 %         |
+| 1000          | 79.95   %          | 53.4819 %         |
+| 1500          | 78.1    %          | 51.8106 %         |
+| 2000          | 79.5    %          | 49.3036 %         |
+| 2500          | 78.16   %          | 47.0752 %         |
+| 3000          | 78.3333 %          | 51.8106 %         |
+| 3500          | 78.2714 %          | 49.8607 %         |
+| 4000          | 79.2375 %          | 53.2033 %         |
+| 4500          | 77.4889 %          | 51.2535 %         |
+| 5000          | 77.44   %          | 49.3036 %         |
+| 5500          | 77.0909 %          | 51.8106 %         |
+| 6000          | 76.2667 %          | 54.039  %         |
+| 6500          | 77.0846 %          | 52.0891 %         |
+| 7000          | 76.3143 %          | 53.7604 %         |
+| 7500          | 78.0067 %          | 54.3175 %         |
+| 8000          | 76.9938 %          | 54.5961 %         |
+| 8500          | 76.3235 %          | 54.8747 %         |
+| 9000          | 76.2222 %          | 52.0891 %         |
+| 9500          | 76.7632 %          | 48.468  %         |
+| 10000         | 76.1238 %          | 55.1532 % *       |
+----------------------------------------------------------
+
+EXPLANATION:
+The testing accuracy generally increases as the number of data increases. 
+The more data there is the more it learns and the better it can classify tweets.
+
+RESULTS:
+********** WEKA J48 500 **********
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         807               80.7    %
+Incorrectly Classified Instances       193               19.3    %
+Kappa statistic                          0.614 
+Mean absolute error                      0.281 
+Root mean squared error                  0.3748
+Relative absolute error                 56.1919 %
+Root relative squared error             74.9613 %
+Total Number of Instances             1000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         171               47.6323 %
+Incorrectly Classified Instances       188               52.3677 %
+Kappa statistic                         -0.0503
+Mean absolute error                      0.5185
+Root mean squared error                  0.6215
+Relative absolute error                103.6985 %
+Root relative squared error            124.2951 %
+Total Number of Instances              359     
+
+********** WEKA J48 1000 **********
+
+Time taken to build model: 0.35 seconds
+Time taken to test model on training data: 0.04 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        1599               79.95   %
+Incorrectly Classified Instances       401               20.05   %
+Kappa statistic                          0.599 
+Mean absolute error                      0.2855
+Root mean squared error                  0.3778
+Relative absolute error                 57.1    %
+Root relative squared error             75.5645 %
+Total Number of Instances             2000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         192               53.4819 %
+Incorrectly Classified Instances       167               46.5181 %
+Kappa statistic                          0.0672
+Mean absolute error                      0.4749
+Root mean squared error                  0.5813
+Relative absolute error                 94.9855 %
+Root relative squared error            116.2666 %
+Total Number of Instances              359     
+
+********** WEKA J48 1500 **********
+
+Time taken to build model: 0.47 seconds
+Time taken to test model on training data: 0.04 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        2343               78.1    %
+Incorrectly Classified Instances       657               21.9    %
+Kappa statistic                          0.562 
+Mean absolute error                      0.3031
+Root mean squared error                  0.3893
+Relative absolute error                 60.6162 %
+Root relative squared error             77.8564 %
+Total Number of Instances             3000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         186               51.8106 %
+Incorrectly Classified Instances       173               48.1894 %
+Kappa statistic                          0.0343
+Mean absolute error                      0.4927
+Root mean squared error                  0.5941
+Relative absolute error                 98.5408 %
+Root relative squared error            118.813  %
+Total Number of Instances              359     
+
+********** WEKA J48 2000 **********
+
+Time taken to build model: 0.61 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        3180               79.5    %
+Incorrectly Classified Instances       820               20.5    %
+Kappa statistic                          0.59  
+Mean absolute error                      0.2899
+Root mean squared error                  0.3807
+Relative absolute error                 57.9766 %
+Root relative squared error             76.1424 %
+Total Number of Instances             4000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         177               49.3036 %
+Incorrectly Classified Instances       182               50.6964 %
+Kappa statistic                         -0.0166
+Mean absolute error                      0.5106
+Root mean squared error                  0.6213
+Relative absolute error                102.1252 %
+Root relative squared error            124.252  %
+Total Number of Instances              359     
+
+********** WEKA J48 2500 **********
+
+Time taken to build model: 0.68 seconds
+Time taken to test model on training data: 0.06 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        3908               78.16   %
+Incorrectly Classified Instances      1092               21.84   %
+Kappa statistic                          0.5632
+Mean absolute error                      0.3007
+Root mean squared error                  0.3877
+Relative absolute error                 60.1318 %
+Root relative squared error             77.5447 %
+Total Number of Instances             5000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         169               47.0752 %
+Incorrectly Classified Instances       190               52.9248 %
+Kappa statistic                         -0.061 
+Mean absolute error                      0.5142
+Root mean squared error                  0.6102
+Relative absolute error                102.8336 %
+Root relative squared error            122.0447 %
+Total Number of Instances              359     
+
+********** WEKA J48 3000 **********
+
+Time taken to build model: 0.64 seconds
+Time taken to test model on training data: 0.06 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        4700               78.3333 %
+Incorrectly Classified Instances      1300               21.6667 %
+Kappa statistic                          0.5667
+Mean absolute error                      0.3007
+Root mean squared error                  0.3877
+Relative absolute error                 60.1334 %
+Root relative squared error             77.5457 %
+Total Number of Instances             6000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         186               51.8106 %
+Incorrectly Classified Instances       173               48.1894 %
+Kappa statistic                          0.0348
+Mean absolute error                      0.4856
+Root mean squared error                  0.5969
+Relative absolute error                 97.1176 %
+Root relative squared error            119.382  %
+Total Number of Instances              359     
+
+********** WEKA J48 3500 **********
+
+Time taken to build model: 0.85 seconds
+Time taken to test model on training data: 0.07 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        5479               78.2714 %
+Incorrectly Classified Instances      1521               21.7286 %
+Kappa statistic                          0.5654
+Mean absolute error                      0.3075
+Root mean squared error                  0.3921
+Relative absolute error                 61.4937 %
+Root relative squared error             78.4179 %
+Total Number of Instances             7000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         179               49.8607 %
+Incorrectly Classified Instances       180               50.1393 %
+Kappa statistic                         -0.0044
+Mean absolute error                      0.4978
+Root mean squared error                  0.5939
+Relative absolute error                 99.5611 %
+Root relative squared error            118.7835 %
+Total Number of Instances              359     
+
+********** WEKA J48 4000 **********
+
+Time taken to build model: 1 seconds
+Time taken to test model on training data: 0.08 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        6339               79.2375 %
+Incorrectly Classified Instances      1661               20.7625 %
+Kappa statistic                          0.5848
+Mean absolute error                      0.2897
+Root mean squared error                  0.3806
+Relative absolute error                 57.938  %
+Root relative squared error             76.117  %
+Total Number of Instances             8000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         191               53.2033 %
+Incorrectly Classified Instances       168               46.7967 %
+Kappa statistic                          0.0623
+Mean absolute error                      0.4842
+Root mean squared error                  0.5951
+Relative absolute error                 96.8322 %
+Root relative squared error            119.0117 %
+Total Number of Instances              359     
+
+********** WEKA J48 4500 **********
+
+Time taken to build model: 0.98 seconds
+Time taken to test model on training data: 0.1 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        6974               77.4889 %
+Incorrectly Classified Instances      2026               22.5111 %
+Kappa statistic                          0.5498
+Mean absolute error                      0.313 
+Root mean squared error                  0.3956
+Relative absolute error                 62.5979 %
+Root relative squared error             79.1189 %
+Total Number of Instances             9000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         184               51.2535 %
+Incorrectly Classified Instances       175               48.7465 %
+Kappa statistic                          0.0234
+Mean absolute error                      0.4982
+Root mean squared error                  0.5914
+Relative absolute error                 99.6358 %
+Root relative squared error            118.2827 %
+Total Number of Instances              359     
+
+********** WEKA J48 5000 **********
+
+Time taken to build model: 1.24 seconds
+Time taken to test model on training data: 0.08 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        7744               77.44   %
+Incorrectly Classified Instances      2256               22.56   %
+Kappa statistic                          0.5488
+Mean absolute error                      0.3082
+Root mean squared error                  0.3926
+Relative absolute error                 61.649  %
+Root relative squared error             78.5169 %
+Total Number of Instances            10000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         177               49.3036 %
+Incorrectly Classified Instances       182               50.6964 %
+Kappa statistic                         -0.016 
+Mean absolute error                      0.5041
+Root mean squared error                  0.6049
+Relative absolute error                100.8248 %
+Root relative squared error            120.9864 %
+Total Number of Instances              359     
+
+********** WEKA J48 5500 **********
+
+Time taken to build model: 1.24 seconds
+Time taken to test model on training data: 0.08 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        8480               77.0909 %
+Incorrectly Classified Instances      2520               22.9091 %
+Kappa statistic                          0.5418
+Mean absolute error                      0.3143
+Root mean squared error                  0.3964
+Relative absolute error                 62.8643 %
+Root relative squared error             79.287  %
+Total Number of Instances            11000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         186               51.8106 %
+Incorrectly Classified Instances       173               48.1894 %
+Kappa statistic                          0.0345
+Mean absolute error                      0.4852
+Root mean squared error                  0.5884
+Relative absolute error                 97.0348 %
+Root relative squared error            117.675  %
+Total Number of Instances              359     
+
+********** WEKA J48 6000 **********
+
+Time taken to build model: 1.51 seconds
+Time taken to test model on training data: 0.09 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        9152               76.2667 %
+Incorrectly Classified Instances      2848               23.7333 %
+Kappa statistic                          0.5253
+Mean absolute error                      0.3263
+Root mean squared error                  0.4039
+Relative absolute error                 65.2524 %
+Root relative squared error             80.779  %
+Total Number of Instances            12000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         194               54.039  %
+Incorrectly Classified Instances       165               45.961  %
+Kappa statistic                          0.0784
+Mean absolute error                      0.4771
+Root mean squared error                  0.5752
+Relative absolute error                 95.4168 %
+Root relative squared error            115.036  %
+Total Number of Instances              359     
+
+********** WEKA J48 6500 **********
+
+Time taken to build model: 1.58 seconds
+Time taken to test model on training data: 0.11 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances       10021               77.0846 %
+Incorrectly Classified Instances      2979               22.9154 %
+Kappa statistic                          0.5417
+Mean absolute error                      0.3151
+Root mean squared error                  0.3969
+Relative absolute error                 63.019  %
+Root relative squared error             79.3845 %
+Total Number of Instances            13000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         187               52.0891 %
+Incorrectly Classified Instances       172               47.9109 %
+Kappa statistic                          0.0391
+Mean absolute error                      0.4968
+Root mean squared error                  0.5913
+Relative absolute error                 99.3602 %
+Root relative squared error            118.2674 %
+Total Number of Instances              359     
+
+********** WEKA J48 7000 **********
+
+Time taken to build model: 1.82 seconds
+Time taken to test model on training data: 0.13 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances       10684               76.3143 %
+Incorrectly Classified Instances      3316               23.6857 %
+Kappa statistic                          0.5263
+Mean absolute error                      0.3247
+Root mean squared error                  0.4029
+Relative absolute error                 64.9411 %
+Root relative squared error             80.586  %
+Total Number of Instances            14000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         193               53.7604 %
+Incorrectly Classified Instances       166               46.2396 %
+Kappa statistic                          0.0734
+Mean absolute error                      0.4887
+Root mean squared error                  0.5887
+Relative absolute error                 97.7364 %
+Root relative squared error            117.7376 %
+Total Number of Instances              359     
+
+********** WEKA J48 7500 **********
+
+Time taken to build model: 2.08 seconds
+Time taken to test model on training data: 0.13 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances       11701               78.0067 %
+Incorrectly Classified Instances      3299               21.9933 %
+Kappa statistic                          0.5601
+Mean absolute error                      0.3036
+Root mean squared error                  0.3896
+Relative absolute error                 60.7166 %
+Root relative squared error             77.9208 %
+Total Number of Instances            15000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         195               54.3175 %
+Incorrectly Classified Instances       164               45.6825 %
+Kappa statistic                          0.0849
+Mean absolute error                      0.4761
+Root mean squared error                  0.5849
+Relative absolute error                 95.22   %
+Root relative squared error            116.9819 %
+Total Number of Instances              359     
+
+********** WEKA J48 8000 **********
+
+Time taken to build model: 2.36 seconds
+Time taken to test model on training data: 0.12 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances       12319               76.9938 %
+Incorrectly Classified Instances      3681               23.0063 %
+Kappa statistic                          0.5399
+Mean absolute error                      0.315 
+Root mean squared error                  0.3969
+Relative absolute error                 62.9979 %
+Root relative squared error             79.3712 %
+Total Number of Instances            16000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         196               54.5961 %
+Incorrectly Classified Instances       163               45.4039 %
+Kappa statistic                          0.0896
+Mean absolute error                      0.4799
+Root mean squared error                  0.5872
+Relative absolute error                 95.9869 %
+Root relative squared error            117.4475 %
+Total Number of Instances              359     
+
+********** WEKA J48 8500 **********
+
+Time taken to build model: 2.62 seconds
+Time taken to test model on training data: 0.14 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances       12975               76.3235 %
+Incorrectly Classified Instances      4025               23.6765 %
+Kappa statistic                          0.5265
+Mean absolute error                      0.3219
+Root mean squared error                  0.4012
+Relative absolute error                 64.3846 %
+Root relative squared error             80.24   %
+Total Number of Instances            17000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         197               54.8747 %
+Incorrectly Classified Instances       162               45.1253 %
+Kappa statistic                          0.0949
+Mean absolute error                      0.4757
+Root mean squared error                  0.5757
+Relative absolute error                 95.1397 %
+Root relative squared error            115.1487 %
+Total Number of Instances              359     
+
+********** WEKA J48 9000 **********
+
+Time taken to build model: 2.73 seconds
+Time taken to test model on training data: 0.17 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances       13720               76.2222 %
+Incorrectly Classified Instances      4280               23.7778 %
+Kappa statistic                          0.5244
+Mean absolute error                      0.3223
+Root mean squared error                  0.4014
+Relative absolute error                 64.4616 %
+Root relative squared error             80.288  %
+Total Number of Instances            18000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         187               52.0891 %
+Incorrectly Classified Instances       172               47.9109 %
+Kappa statistic                          0.0388
+Mean absolute error                      0.4847
+Root mean squared error                  0.5848
+Relative absolute error                 96.9309 %
+Root relative squared error            116.963  %
+Total Number of Instances              359     
+
+********** WEKA J48 9500 **********
+
+Time taken to build model: 2.95 seconds
+Time taken to test model on training data: 0.13 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances       14585               76.7632 %
+Incorrectly Classified Instances      4415               23.2368 %
+Kappa statistic                          0.5353
+Mean absolute error                      0.3175
+Root mean squared error                  0.3984
+Relative absolute error                 63.5049 %
+Root relative squared error             79.6899 %
+Total Number of Instances            19000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         174               48.468  %
+Incorrectly Classified Instances       185               51.532  %
+Kappa statistic                         -0.0324
+Mean absolute error                      0.5162
+Root mean squared error                  0.6191
+Relative absolute error                103.2473 %
+Root relative squared error            123.8111 %
+Total Number of Instances              359     
+
+********** WEKA J48 10000 **********
+
+Time taken to build model: 3.2 seconds
+Time taken to test model on training data: 0.17 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances       15224               76.1238 %
+Incorrectly Classified Instances      4775               23.8762 %
+Kappa statistic                          0.5225
+Mean absolute error                      0.3249
+Root mean squared error                  0.403 
+Relative absolute error                 64.9719 %
+Root relative squared error             80.6052 %
+Total Number of Instances            19999     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         198               55.1532 %
+Incorrectly Classified Instances       161               44.8468 %
+Kappa statistic                          0.0992
+Mean absolute error                      0.4737
+Root mean squared error                  0.5675
+Relative absolute error                 94.7369 %
+Root relative squared error            113.5079 %
+Total Number of Instances              359     
+
